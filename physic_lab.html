@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ФИЗИЧНА ЛАБОРАТОРИЯ</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/4e4e7b9b60.js" crossorigin="anonymous"></script>
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style1.css">
+<link rel="stylesheet" href="assets/css/style2.css">
+<link rel="stylesheet" href="assets/css/style3.css">
+<link rel="stylesheet" href="assets/css/style 4.css">
+<link href="assets/css/bootstrap.min.css" rel="stylesheet"> 
+<link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body class="w3-content" style="max-width:1200px">
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h3 class="w3-wide"><b>ФИЗИЧНА ЛАБОРАТОРИЯ</b></h3>
+  </div>
+  <a href="index.html#students" class="previous">&laquo; Назад</a>
+  <style>
+    a {
+      text-decoration: none;
+      display: inline-block;
+      padding: 8px 16px;
+    }
+    .previous {
+      background-color: #51c2b9;
+      color: white;
+      margin-left: 17px;
+      border-radius: 20px;
+    }
+    .round {
+      border-radius: 50%;
+    }
+    </style>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a href="#otripr" class="w3-bar-item w3-button">Отражение и пречупване</a>
+    <a href="#plogl" class="w3-bar-item w3-button">Плоско огледало</a>
+    <a href="#obpridveplogl" class="w3-bar-item w3-button">Образ при две плоски огледала</a>
+    <a href="#obprileshti" class="w3-bar-item w3-button">Образи при лещи</a>
+    <a href="#prepreztr" class="w3-bar-item w3-button">Пречупване през триъгълник</a>
+    <a href="#preprezkv" class="w3-bar-item w3-button">Пречупване през квадрат</a>
+   
+  </div>
+</nav>
+
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay">
+</div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <!--<p class="w3-left">Класна стая</p>-->
+    <p class="w3-right">
+            <i class="fa fa-search"></i>
+    </p>
+  </header>
+
+ 
+
+  <script>
+    // Accordion 
+    function myAccFunc() {
+      var x = document.getElementById("demoAcc");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    
+    // Click on the "Jeans" link on page load to open the accordion for demo purposes
+    document.getElementById("myBtn").click();
+    
+    
+    // Open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+     
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+    </script>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>    
+            <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+
+<section id="start" class="cards-row">
+  <article class="cards">
+    
+  
+      <div class="cards_content">
+          <h3>Физична лаборатория</h3>
+        
+          
+        <p>Тук ще научите всичко най-важно свързано със Светлината</p>
+        <p>Отражение и пречупване, лещи и огледала.</p>
+      </div>
+  
+      <div class="cards_content">
+        <div class="card-header">
+          <img class="img-responsive" src="assets/images/physic_lab/physic_lab.png" alt="physic_lab" width="50%">
+      </div>
+        
+  
+  
+      </div>
+  </article>
+  </section>
+
+<section id="otripr" class="cards-row">
+  <article class="cards">  
+      <div class="cards_content" style="width: 100%;height: auto; margin: auto 0;">
+        <h3>Отражение и пречупване</h3>
+        <p>&#8729;<b>Можем да видим отражението и пречупването на светлината, пълното вътрешно отражение и отражението при триъгълник;</b></p> 
+        <p>&#8729;<b>Можем да променяме ъгъла на падане;</b></p> 
+        <p>&#8729;<b>Можем да отбелязваме стойностите на ъглите;</b></p> 
+        <style>
+          p{
+            text-align: center;
+          }
+        </style>
+        <div class="card-header"> 
+          <iframe scrolling="no" title="ОТРАЖЕНИЕ И ПРЕЧУПВАНЕ" 
+      src="https://www.geogebra.org/material/iframe/id/ZaJn2c6E/width/1806/height/722/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/false/ctl/true" width="100%" height="722px" style="border:0px;"> </iframe>        
+        </div>
+      </div> 
+  </article>
+  </section>
+
+  <section id="plogl" class="cards-row">
+    <article class="cards">  
+        <div class="cards_content" style="width: 100%;height: auto; margin: auto 0;">
+        <h3>Плоско огледало</h3>
+        <p>&#8729;<b>Можем да променяме разстоянието на предмета до огледалото</b></p> 
+        <p>&#8729;<b>Можем да местим линията</b></p> 
+        <p>&#8729;<b>Чрез лупата можем да увеличаваме и намаляме размера на обектите</b></p> 
+        <p>&#8729;<b>Можем да махаме линията</b></p> 
+          <div class="card-header">       
+            <iframe scrolling="no" title="ПЛОСКО ОГЛЕДАЛО" src="https://www.geogebra.org/material/iframe/id/zTMrhDw2/width/1888/height/822/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/false/ctl/true" width="100%" height="822px" style="border:0px;"> </iframe>    
+          </div>
+          </div>  
+      </article>
+    </section>
+ 
+  <section id="obpridveplogl" class="cards-row">
+    <article class="cards">  
+        <div class="cards_content" style="width: 100%;height: auto; margin: auto 0;"> 
+        <h3>Образ при две плоски огледала</h3>
+        <p>&#8729;<b>Можем да променяме ъгъла между огледалата;</b></p> 
+        <p>&#8729;<b>Можем да променяме позицията на предмета;</b></p> 
+        <p>&#8729;<b>Чрез лупата можем да увеличаваме и намаляме размера на обектите;</b></p> 
+            <div class="card-header">       
+              <iframe scrolling="no" title="ОБРАЗ ПРИ ДВЕ ПЛОСКИ ОГЛЕДАЛА" src="https://www.geogebra.org/material/iframe/id/w68W2uM5/width/1888/height/822/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/false/ctl/true" width="100%" height="822px" style="border:0px;"> </iframe>
+            </div>
+          </div>
+      </article>
+    </section>
+
+  <section id="obprileshti" class="cards-row">
+    <article class="cards">  
+        <div class="cards_content" style="width: 100%;height: auto; margin: auto 0;"> 
+        <h3>Образи при лещи</h3>
+        <p>&#8729;<b>Можем да променяме фокусното разстояние</b></p> 
+        <p>&#8729;<b>Можем да местим линията</b></p> 
+        <p>&#8729;<b>Можем да променяме разстоянието на предмета до лещата</b></p>
+        <p>&#8729;<b>Можем да отбелязваме характеристиките на образа</b></p>
+            <div class="card-header">       
+              <iframe scrolling="no" title="ОБРАЗИ ПРИ ЛЕЩИ" src="https://www.geogebra.org/material/iframe/id/fxb9XD3j/width/1888/height/822/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/false/ctl/true" width="100%" height="822px" style="border:0px;"> </iframe>
+            </div>
+          </div> 
+      </article>   
+    </section>
+
+  <section id="prepreztr" class="cards-row">
+    <article class="cards">  
+        <div class="cards_content" style="width: 100%;height: auto; margin: auto 0;"> 
+        <h3>Пречупване през триъгълник</h3>
+        <p>&#8729;<b>Можем да променяме ъгъла на падане</b></p> 
+        <p>&#8729;<b>Можем да местим триъгълника</b></p> 
+        <p>&#8729;<b>Можем да променяме размера на триъгълника</b></p>
+            <div class="card-header">       
+              <iframe scrolling="no" title="ПРЕЧУПВАНЕ ПРЕЗ ТРИЪГЪЛНИК" src="https://www.geogebra.org/material/iframe/id/uXYyE2GN/width/1893/height/846/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/false/ctl/true" width="100%" height="846px" style="border:0px;"> </iframe> 
+            </div>
+          </div>
+      </article>  
+    </section>
+
+  <section id="preprezkv" class="cards-row">
+    <article class="cards">  
+        <div class="cards_content" style="width: 100%;height: auto; margin: auto 0;"> 
+        <h3>Пречупване през квадрат</h3>
+        <p>&#8729;<b>Можем да променяме ъгъла на падане</b></p> 
+        <p>&#8729;<b>Можем да местим квадрата</b></p> 
+        <p>&#8729;<b>Можем да променяме размера на квадрата</b></p>
+          <div class="card-header">       
+            <iframe scrolling="no" title="ПРЕЧУПВАНЕ ПРЕЗ КВАДРАТ" src="https://www.geogebra.org/material/iframe/id/hPQvAwKV/width/1893/height/846/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/false/ctl/true" width="100%" height="846px" style="border:0px;"> </iframe>
+          </div>
+        </div>
+    </article>
+  </section>
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+              
+  </body>
+</html>
